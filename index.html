@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<title>Mega Market</title>
+
+<style>
+body{
+font-family:Arial;
+padding:20px;
+background:#f5f5f5;
+}
+
+.product{
+background:white;
+padding:15px;
+margin:10px 0;
+border-radius:10px;
+}
+
+button{
+padding:8px 12px;
+border:none;
+border-radius:6px;
+background:#0088cc;
+color:white;
+}
+</style>
+</head>
+
+<body>
+
+<h2>🛒 Mega Market</h2>
+
+<div class="product">
+Cola — 12000 so'm
+<button onclick="add(12000)">Qo'shish</button>
+</div>
+
+<div class="product">
+Non — 3000 so'm
+<button onclick="add(3000)">Qo'shish</button>
+</div>
+
+<div class="product">
+Sut — 9000 so'm
+<button onclick="add(9000)">Qo'shish</button>
+</div>
+
+<hr>
+<h3>Jami: <span id="total">0</span> so'm</h3>
+
+<button onclick="buy()">Buyurtma berish</button>
+
+<script>
+let total = 0
+
+function add(price){
+total += price
+document.getElementById("total").innerText = total
+}
+
+function buy(){
+Telegram.WebApp.sendData("Buyurtma: "+total+" so'm")
+Telegram.WebApp.close()
+}
+
+Telegram.WebApp.expand()
+</script>
+
+</body>
+</html>

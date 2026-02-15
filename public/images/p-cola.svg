@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e0f2fe"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#0b1220" flood-opacity=".14"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" rx="42" fill="url(#g)"/>
+  <g filter="url(#s)">
+    <rect x="70" y="70" width="660" height="460" rx="34" fill="rgba(255,255,255,.92)"/>
+  </g>
+  <text x="120" y="175" font-family="Inter, Arial" font-size="40" font-weight="900" fill="#0b1220">Cola 1L</text>
+  <text x="120" y="225" font-family="Inter, Arial" font-size="20" font-weight="700" fill="#5b667a">Mega Market</text>
+
+  <g transform="translate(120,285)">
+    <rect width="250" height="66" rx="18" fill="#2563eb"/>
+    <text x="125" y="44" text-anchor="middle" font-family="Inter, Arial" font-size="22" font-weight="900" fill="#fff">12 000 so‘m</text>
+  </g>
+
+  <g transform="translate(560,250)">
+    <circle cx="90" cy="90" r="90" fill="rgba(37,99,235,.14)"/>
+    <text x="90" y="110" text-anchor="middle" font-family="Inter, Arial" font-size="92" font-weight="900" fill="#1143c7">🥤</text>
+  </g>
+</svg>

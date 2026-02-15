@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+:root{
+  --bg: #f6f9ff;
+  --card: #ffffff;
+  --text: #0b1220;
+  --muted: #5b667a;
+  --brand: #2563eb;
+  --brand2: #0ea5e9;
+  --ring: rgba(37,99,235,.35);
+}
+
+html, body { height: 100%; }
+body{
+  background: radial-gradient(1000px 700px at 20% -10%, rgba(14,165,233,.18), transparent 60%),
+              radial-gradient(900px 650px at 90% 0%, rgba(37,99,235,.16), transparent 55%),
+              var(--bg);
+  color: var(--text);
+}
+
+.container-max{ max-width: 980px; margin: 0 auto; padding: 16px; }
+
+.card{
+  background: var(--card);
+  border: 1px solid rgba(15, 23, 42, .08);
+  box-shadow: 0 10px 25px rgba(2, 6, 23, .06);
+  border-radius: 18px;
+}
+
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-weight: 700;
+  border: 1px solid rgba(15, 23, 42, .10);
+  background: white;
+  transition: transform .06s ease, box-shadow .18s ease;
+}
+.btn:active{ transform: translateY(1px); }
+.btn-primary{
+  background: linear-gradient(135deg, var(--brand), var(--brand2));
+  color: white;
+  border: 0;
+  box-shadow: 0 14px 30px rgba(37,99,235,.22);
+}
+.btn-ghost{
+  background: rgba(37,99,235,.08);
+  border: 1px solid rgba(37,99,235,.16);
+  color: #1143c7;
+}
+
+.input{
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid rgba(15,23,42,.12);
+  padding: 12px 12px;
+  outline: none;
+  background: rgba(255,255,255,.9);
+}
+.input:focus{
+  border-color: rgba(37,99,235,.55);
+  box-shadow: 0 0 0 4px var(--ring);
+}
+
+.badge{
+  display:inline-flex; align-items:center; gap:6px;
+  padding: 6px 10px; border-radius: 999px;
+  background: rgba(37,99,235,.10);
+  border: 1px solid rgba(37,99,235,.16);
+  color: #1143c7;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.soft{
+  color: var(--muted);
+}
+
+.hr{ height:1px; background: rgba(15,23,42,.08); }
+

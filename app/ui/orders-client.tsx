@@ -7,6 +7,15 @@ import { SideMenu } from "@/components/SideMenu";
 import { getOrders } from "@/lib/orders";
 import { moneyUZS } from "@/lib/money";
 
+type Order = {
+  id: string;
+  status: string;
+  total?: number;
+  createdAt?: string;
+  items?: any[];
+};
+
+
 export function OrdersClient() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [orders, setOrders] = useState(() => []);

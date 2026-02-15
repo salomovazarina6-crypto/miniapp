@@ -1,3 +1,6 @@
+import { CATEGORIES } from "@/data/seed";
+import { HomeClient } from "@/app/ui/home-client";
+
 export default function Page() {
-  return <h1>HELLO MINIAPP</h1>;
+  return <HomeClient categories={CATEGORIES} />;
 }

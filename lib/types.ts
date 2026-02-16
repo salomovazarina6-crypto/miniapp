@@ -28,3 +28,6 @@ export type Order = {
   total: number;
   status: "new" | "paid" | "done" | "cancelled";
 };
+  lat?: number;
+  lng?: number;
+  locationUpdatedAt?: string;
